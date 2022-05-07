@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+        <h1 class="heading">Edit Request: Leave <span id="request-status"></span></h1>
+        <div class="container">
+            <div class="left-cont">
+                <label for="type">Leave Type</label>
+                <select name="leaveType" id="type">
+                    <option value="casualLeave">Casual Leave</option>
+                </select>
+                <label for="calender">Select days</label>
+                <div id="calender" class="calender">
+                    <div class="month">
+                        <i class="fa fa-angle-left prev" aria-hidden="true"></i>
+                        <div class="current-date">
+                            <h1></h1>
+                            <p></p>
+                        </div>
+                        <i class="fa fa-angle-right next" aria-hidden="true"></i>
+                    </div>
+                    <div class="weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div class="days">
+                    </div>
+                </div>
+            </div>
+            <div class="right-cont">
+                <p>You've selected <span id="date-range"></span>.</p>
+            </div>
+        </div>
+        <label for="reason">Reason</label>
+        <div class="submit">
+            <input type="text" name="reason" id="reason" placeholder="optional">
+            <button id="update-btn">Update Request</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
