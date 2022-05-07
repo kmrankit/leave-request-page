@@ -160,3 +160,21 @@ label{
 .right-cont p span{
     font-weight: 700;
 }
+@media screen and (max-width:400px) {
+    html{
+        font-size: 40%;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    .left-cont{
+        width: 100;
+    }
+    .right-cont{
+        margin: 5% 0;
+        width: 100%;
+    }
+}
